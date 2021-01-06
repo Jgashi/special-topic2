@@ -1,0 +1,140 @@
+article{
+  padding: 0;
+}
+.description{
+  /* width: 1200px; */
+  margin: 80px auto 40px;
+  font-size: 0;
+}
+.description .title{
+  font-size: 48px;
+  padding: 20px 10px 0 40px;
+  vertical-align: middle;
+  text-align: left;
+}
+.description .fa-angle-left{
+  font-size: 36px;
+}
+.description span{
+  position: relative;
+  font-size: 36px;
+  color: #1c5a77;
+}
+.description span::after {
+  content: "";
+  width: 100%;
+  font-size: 16px;
+  position: absolute;
+  bottom: 2px;
+  left: 3%;
+  right: 100%;
+  border-bottom: 3px solid #1c5a77;
+}
+.description .pic{
+  display: inline-block;
+}
+.description .pic img{
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.description p{
+  font-size: 18px;
+  padding: 20px 10px 0 40px;
+}
+.detail02{
+  display: none;
+}
+.detail{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px auto 40px;
+  font-size: 0;
+}
+.detail div{
+  font-size: 0;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.detail div:hover{
+  box-shadow: 5px 10px 8px 0px rgb(124, 124, 124);
+}
+.detail .txt{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, .5);
+  color: #eeeeea;
+  opacity: 0;
+  transform: translateY(100%);
+  margin: 0;
+  transition: transform .5s ease-out;
+}
+.detail div:hover .txt{
+  transform: translateY(0%);
+  opacity: 1;
+}
+.detail .txt a{
+  display: block;
+  color: #eeeeea;
+}
+.detail .txt a span{
+  display: block;
+  padding: .3em 0;
+  transition-duration: .2s;
+}
+.detail .txt a span:hover{
+  color: #858585;
+}
+.detail .txt p{
+  text-align: center;
+  padding-bottom: .3em;
+  transition-duration: .2s;
+}
+.detail .txt p:hover{
+  color: #858585;
+}
+
+
+.detail img:hover{
+  box-shadow: 5px 10px 5px 5px #1c5a776c;
+
+}
+
+
+
+.more{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 60px;
+  font-size: 0;
+}
+.more p{
+  font-size: 18px;
+  width: 10%;
+  padding: 10px 16px;
+  text-align: center;
+  color: #eeeeea;
+  /* border: 1px solid green; */
+  background-color: #0b0b0b;
+}
+.buttom-container{
+  margin-bottom: 30px;
+}
+input.button{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #1d4a63;
+  color: #eeeeea;
+}
+

@@ -1,0 +1,104 @@
+.main{
+  margin: 60px auto;
+}
+.main-title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  padding-bottom: .5em;
+  position: relative;
+}
+.main-title::after{
+  content: "";
+  width: 20%;
+  border-bottom: 4px solid rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.content{
+  padding: 30px 0;
+}
+.content .small-title{
+  font-size: 24px;
+  padding-right: 40px;
+  text-align: left;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+}
+.txt{
+  display: none;
+  font-size: 16px;
+  padding-top: 30px;
+  text-align: left;
+  font-weight: 400;
+  line-height: normal;
+}
+.-on{
+  display: block;
+}
+.minus{
+  display: block;
+  padding: 0 8px 8px;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  margin-bottom: 6px;
+  right: 0;
+  top: 0;
+}
+.plus{
+  display: none;
+  padding: 0 8px 8px;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.iconremove .minus{
+  display: none;
+}
+.iconremove .plus{
+  display: block;
+}
+.icon{
+  display: inline-block;
+}
+
+@media (min-width: 1200px){
+  .main{
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1199px){
+  .main{
+    width: 960px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px){
+  .main{
+    width: 720px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px){
+  .main{
+    width: 540px;
+    max-width: 100%;
+  }
+  .content{
+    padding: 15px 0;
+  }
+  .txt{
+    padding-top: 10px;
+  }
+  .content .small-title{
+    font-size: 20px;
+  }
+}

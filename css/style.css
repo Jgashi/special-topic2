@@ -1,0 +1,292 @@
+/* 影片 */
+article{
+	padding: 0;
+}
+video{
+	width: 100%;
+	overflow-y: hidden;
+}
+
+.style ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin-top: 50px;
+}
+.style ul li{
+	vertical-align: middle;
+	margin: 0 35px 35px;
+	position: relative;
+	text-align: left;
+}
+.style > ul > li > a{
+	display: block;
+	overflow: hidden;
+	transition: .3s ease-in-out;
+	font-size: 0;
+	border-radius: 3px;
+}
+.style img{
+	width: 100%;
+}
+.style > ul > li > a.btn {
+	display: inline-block;
+	border: none;
+	padding: .5em .7em;
+	margin: .5em 1.1em;
+	font-size: 16px;
+	transition: .3s;
+}
+.style > ul > li > a.btn:hover{
+	background-color: var(--color-primary);
+	color: var(--color-K20);
+}
+.style > ul > li::before {
+	content: '';
+	display: inline-block;
+	background: #C1B3B3;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	opacity: .4;
+	transform: translate(30%, -20%);
+}
+.style ul li:first-child::after {
+	content: '近期作品';
+	background: #0d222d;
+	color: #eeeeed;
+	font-size: 20px;
+	font-weight: bold;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-113%);
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+/* 團隊介紹 */
+.artists .block{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+.artists .container .art-pic{
+	overflow: hidden;
+	height: 470px;
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.artists .container .wrap{
+	max-width: 355px;
+}
+.artists .container .wrap-txt{
+	width: 80%;
+	max-width: 355px;
+	align-self: center;
+}
+.artists{
+	font-size: 0;
+	padding-top: 0;
+}
+.artists p{
+	border-bottom: 1px dashed #ccc;
+	padding: .7em .5em;
+  text-align: left;
+}
+.artists-1{
+	display: flex;
+	flex-direction: column;
+}
+.artists .block .wrap-swap:nth-child(1){
+	order: 2;
+}
+.artists .block .wrap-swap:nth-child(2){
+	order: 1;
+}
+.artists .list{
+	color: #5a5a5a;
+	font-size: 16px;
+	position: relative;
+	margin-left: 15px;
+}
+.artists .list::before{
+	content: '';
+	position: absolute;
+	left: -10px;
+	top: 5px;
+	width: 5px;
+	height: 5px;
+	background-color: #0d222d;
+}
+/* 工作室介紹 */
+.sv-wrap{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.right{
+	align-self: center;
+
+}
+.right .pic{
+	max-width: 500px;
+	width: 100%;
+	margin: 20px 0;
+}
+.left .txt{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 170px;
+	position: relative;
+	margin: 40px 0 60px;
+}
+.left .txt h2{
+	align-self: center;
+	font-size: 22px;
+	flex-basis: 50%;
+}
+.txt p{
+	font-size: 16px;
+	padding: 0 0 0 5px;
+	line-height: 1.8em;
+	margin: 0;
+	flex-basis: 50%;
+}
+.txt p::after {
+	content: "";
+	width: 1px;
+	height: 120px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #0d222d;
+	transform: translate(-50%,-50%);
+}
+.left{
+	order: 1;
+}
+.right{
+	order: 2;
+}
+.left .w25h60{
+	display: inline-block;
+	height: 270px;
+	overflow: hidden;
+	margin: 10px 10px;
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+.left .w25h60 img{
+	transform: translateY(-20%);
+}
+.sa{
+	font-size: 36px;
+	width: 100%;
+	color: #eeeeea;
+	background-color: #4e4e4e;
+	border-radius: 5px;
+	/* writing-mode: vertical-lr; */
+	/* transform: rotate(180deg); */
+	/* position: absolute; */
+	top: 0;
+	right: 0;
+	/* transform: translateY(-100%); */
+	cursor: pointer;
+	/* padding-left: 4%; */
+}
+/* 注意事項 */
+.studio{
+	padding-bottom: 0;
+}
+.pic-right{
+	display: inline-block;
+	overflow: hidden;
+	width: 50%;
+}
+.up{
+	display: inline-block;
+	height: auto;
+	width: 50%;
+	vertical-align: top;
+}
+.txt-wrap a{
+	display: block;
+	font-size: 16px;
+	padding: 6px .5em;
+	font-weight: 700;
+	color: var(--color-K100);
+	transition-duration: .3s;
+}
+.txt-wrap a:hover{
+	background-color: rgba(0, 0, 0, 0.774);
+	color: var(--color-K20);
+}
+@media (max-width: 1199px){
+	.txt-wrap a {
+		padding: 4px;
+	}
+}
+@media (max-width: 991px){
+	.txt-wrap a{
+		padding: 1px;
+	}
+	.style ul li{
+		margin: 0 15px 15px;
+	}
+}
+@media (max-width: 767px){
+	.txt-wrap li{
+		display: inline-block;
+		margin: 10px;
+	}
+	.txt-wrap a{
+		display: inline-block;
+	}
+	.artists .block .wrap-swap:nth-child(1){
+		order: unset;
+	}
+	/* .style > ul > li > a{
+		width: 110%;
+	} */
+}
+@media (max-width: 575px){
+	.pic-right{
+		display: block;
+		width: 100%;
+	}
+	.up{
+		display: block;
+		width: 100%;
+	}
+	.txt-wrap li{
+		display: block;
+	}
+	.txt-wrap a{
+		display: block;
+	}
+	.left .txt h2{
+		flex-basis: 100%;
+	}
+	.txt p{
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.txt p::after{
+		width: 0;
+		height: 0;
+	}
+	.style > ul > li::before{
+		width: 0;
+		height: 0;
+	}
+	.style > ul > li{
+		margin: 0;
+	}
+}

@@ -1,0 +1,136 @@
+
+.h-style2{
+  position: fixed;
+  top: 0;
+  font-size: 0;
+  padding: 37px 0 0 0;
+  display: inline-block;
+  margin: 0;
+  z-index: 50;
+}
+.h-style2 > .header{
+  background-color: #e4e4e4d8;
+  padding: 8px 6px;
+}
+.logo-wrap{
+  display: inline-block;
+  vertical-align: bottom;
+}
+.hamburger{
+	padding: 8px;
+	outline: none;
+}
+/* 選單 */
+nav .-on{
+  display: inline-block;
+}
+nav{
+  display: none;
+  position: fixed;
+  top: 0;
+  margin-top: 100px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, .7);
+  z-index: 51;
+}
+nav ul.menu{
+	padding: .5em 0;
+	width:100%;
+}
+nav ul li{
+	text-align: left;
+}
+nav ul.menu > li > a{
+	display: block;
+	padding: .5em 1em;
+  font-size: 18px;
+  font-weight: 400;
+}
+nav ul.menu li a::after{
+	content: "";
+}
+.add .gallery {
+	padding: 0;
+  width: 100%;
+	font-size: 0;
+  background-color: #0d222d;
+}
+.add .gallery >li{
+  display: inline-block;
+  width: 25%;
+}
+.add .gallery > li > a{
+  display: inline-block;
+  color: #eeeeea;
+  padding: .6em 0;
+  font-size: 1rem;
+  margin-left:16px;
+}
+nav > ul > li > a:hover::after{
+  content: "";
+}
+footer {
+  display: block;
+  font-size: 0.9em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 18;
+  color: #fff;
+  color: rgba(255,255,255,0.5);
+  /* z-index: 1600; */
+}
+
+footer .wrap {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+.footer_social {
+  display: block;
+  font-size: 1.4em;
+  float: right;
+  text-align: right;
+  padding: 12px 20px;
+  padding-right: 80px;
+}
+.footer_social .fab{
+  font-size: 24px;
+}
+.footer_social li{
+  display: inline-block;
+}
+.footer_social a {
+  margin-left: 1em;
+  color: #fff;
+  /* color: rgba(255,255,255,0.5); */
+  color: rgb(20, 59, 54);
+}
+.footer_copyright {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--color-K90);
+  padding: 0 20px 20px 20px;
+  margin-left: 20px;
+}
+.fab{
+  font-size: 30px;
+  color: aqua;
+  margin-left: 30px ;
+}
+@media (max-width: 575px){
+  .h-style2{
+    display: inline-block;
+    /* position: fixed; */
+    font-size: 0;
+    padding: 0 ;
+    display: inline-block;
+    margin: 0;
+    z-index: 51;
+  }
+  nav{
+    margin-top: 63px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+}

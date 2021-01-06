@@ -1,0 +1,263 @@
+header {
+	position: relative;
+	font-size: 0;
+}
+header > .container{
+	background-color: #ffffffbc;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 30;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.header .block{
+	display: inline-block;
+	padding-bottom: 8px;
+}
+.header .logo{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 1rem;
+}
+.header .logo > span{
+	display: inline-block;
+	color: #0d222d;
+	font-size: 14px;
+}
+.hamburger{
+	padding: 8px;
+	outline: none;
+	display: none;
+	z-index: 10;
+}
+/* 選單 */
+nav ul.menu{
+	padding: .5em 0;
+	width:100%;
+}
+nav ul li{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+nav ul.menu > li > a{
+	display: inline-block;
+	padding: .6em 1em;
+	text-decoration: none;
+	position: relative;
+	font-size: 16px;
+}
+nav ul.menu li a::after{
+	content: "";
+  position: absolute;
+  left: 0%;
+  right: 100%;
+  bottom: 6px;
+  height: 0;
+  border-bottom: 1px solid transparent;
+  transition: .3s;
+  font-size: 18px;
+}
+.add{
+	position: relative;
+}
+.add .gallery {
+	display: none;
+	padding: 0;
+	width: 100%;
+	position: absolute;
+	top: 32px;
+	left: 0;
+	font-size: 16px;
+}
+.header .logo > span{
+	margin-left: 10px;
+	font-size: 24px;
+}
+nav{
+	display: block 
+}
+nav ul.menu > li > a:hover::before{
+	opacity: 1;
+}
+nav > ul > li > a:hover::after{
+	left: 0%;
+	right: 0%;
+	border-bottom: 1px solid #0d222d;
+}
+.add:hover .gallery > li > a:hover::after{
+	left: 0%;
+	right: 0%;
+	border-bottom: 1px solid #eeeeea;
+}
+.add:hover .gallery{
+	display: block;
+	background-color: #0d222d;
+}
+.add:hover .gallery > li > a{
+	display: block;
+	margin: .5em .5em;
+	text-decoration: none;
+	position: relative;
+	color: #eeeeea;
+	transition: .3s;
+	font-size: 16px;
+}
+.add:hover .gallery > li > a::after{
+	content: "";
+	position: absolute;
+	left: 0%;
+	right: 100%;
+	bottom: -4px;
+	height: 0;
+	border-bottom: 1px solid transparent;
+	font-size: 18px;
+}
+footer{
+  background-color: #0b222d;
+}
+.footer-wrap{
+	display: flex;
+	justify-content: space-evenly;
+}
+footer .title{
+	font-size: 24px;
+	color: var(--color-K10);
+	margin: 10px 0;
+	text-align: left;
+}
+.footer-wrap .txt{
+	padding-left: 3px;
+	color: var(--color-K40);
+}
+.icon{
+	display: none;
+}
+@media screen and (min-width: 992px){
+	nav{
+		display: block !important
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	nav ul.menu > li > a{
+		padding: .3em .5em;
+	}
+	nav{
+		display: block !important
+	}
+}
+@media screen and (max-width: 767px){
+	.header{
+		justify-content: space-around;
+		align-items: flex-end;
+	}
+	.hamburger{
+		display: block;
+	}
+	.header .block{
+		padding-bottom: 4px;
+	}
+	.container .logo{
+		display: inline-block;
+		padding: 0;
+		height: 100%;
+	}
+	.header img{
+		max-width: 32px;
+	}
+	.header .logo > span{
+		font-size: 20px;
+	}
+	nav{
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		display: none;
+		background-color: rgba(255, 255, 255, .7);
+	}
+	nav ul li{
+		display: block;
+	}
+	nav ul.menu  li  a{
+		display: block;
+		padding: .6em;
+		text-align: center;
+	}
+	nav > ul > li > a:hover::after{
+		left: 0;
+		right: 100%;
+	}
+	.add .gallery > li > a{
+		color: #eeeeea;
+		padding: .6em 0;
+		font-size: 1rem;
+		margin-left:16px;
+		transition: .3s;
+	}
+	.add .gallery{
+		display: block;
+		z-index: 30;
+		position: unset;
+		width: 100%;
+		background-color: #0d222d;
+		font-size: 0;
+	}
+	.add .gallery >li{
+		display: inline-block;
+		width: 25%;
+	}
+
+	.add:hover .gallery > li > a{
+		margin: 0 0 0 16px;
+	}
+s
+	.add:hover .gallery > li > a::after
+	footer .title{
+		margin-top: .5rem;
+		font-size: 20px;
+	}
+	.add:hover .gallery > li > a:hover::after{
+		left: 0;
+		right: 100%;
+	}
+	footer .footer-txt{
+		font-size: 12px;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 575px){
+	footer .title{
+		display: inline-block;
+	}
+	.footer-wrap{
+		display: block;
+		margin: 0 auto;
+	}
+	.footer-wrap .txt{
+		display: none;
+	}
+	footer .title-time{
+		display: none;
+	}
+	.icon{
+		display: inline-block;
+	}
+	footer  ul li{
+		display: inline-block;
+	}
+	footer  ul li a{
+		display: inline-block;
+	}
+	.fab{
+		font-size: 30px;
+		color: aqua;
+		margin-left: 15px;
+	}
+
+}
